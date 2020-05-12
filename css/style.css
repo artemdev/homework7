@@ -1,0 +1,250 @@
+:root {
+  --yellow: #fed136;
+  --black: #222222;
+  --grey: #777777;
+  --white: #ffffff;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+.wrap {
+  width: 940px;
+  margin: 0 auto;
+}
+/* HEADINGS */
+h1,
+h2 {
+  font-family: "Montserrat Bold";
+  font-size: 2.5rem;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  color: var(--black);
+  margin-bottom: 80px;
+}
+h2 {
+  color: var(--white);
+  margin-top: 112px;
+  margin-bottom: 73px;
+}
+span.heading {
+  display: block;
+  font-family: "Droid Serif Italic";
+  font-size: 1rem;
+  text-transform: none;
+  margin-top: 22px;
+
+  color: var(--grey);
+}
+
+.logo {
+  padding-top: 17px;
+  font-size: 1.625rem;
+  line-height: 65px;
+  font-family: "Wisdom Script Regular";
+  color: var(--yellow);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 65px;
+}
+
+nav a {
+  font-family: "Montserrat SemiBold";
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+nav a:hover {
+  color: var(--yellow);
+}
+
+nav ul {
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: flex;
+  height: 14px;
+  padding-top: 51px;
+}
+
+nav ul li a {
+  text-transform: uppercase;
+}
+
+.right-menu {
+  width: 500px;
+  display: inline-flex;
+}
+
+ul.right-menu li {
+  margin-right: 30px;
+}
+
+ul.right-menu li:last-child {
+  margin-right: 0;
+}
+
+/* OUR SERVICES */
+main {
+  padding-top: 128px;
+}
+.services {
+  padding-bottom: 115px;
+}
+.services ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.services ul li {
+  width: 290px;
+  padding: 0 18px;
+  text-align: center;
+}
+.services ul li h3 {
+  font-family: "Montserrat Bold";
+}
+
+.services-img-container {
+  border: 5px solid var(--yellow);
+  border-radius: 50%;
+  box-sizing: border-box;
+  width: 71px;
+  height: 71px;
+  padding: 10px 8px 6px 8px;
+  margin: 0 auto 23px auto;
+}
+
+.services p {
+  font-family: "Roboto Slab";
+  color: var(--grey);
+}
+.services h3 {
+  margin-bottom: 18px;
+}
+
+/* CONTACT US */
+.contact-us {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 672px;
+}
+
+.contact-us:before {
+  width: 614px;
+  height: 537px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 128px;
+  right: 0;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  z-index: 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--black);
+}
+form {
+  display: inline-flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+input[type="text"],
+textarea {
+  box-sizing: border-box;
+  width: 455px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  padding-left: 15px;
+  z-index: 1;
+}
+
+input[type="text"] {
+  display: block;
+  margin-bottom: 31px;
+  height: 50px;
+}
+
+input[type="text"]:last-of-type {
+  margin-bottom: 0px;
+}
+
+button {
+  display: block;
+  width: 240px;
+  height: 65px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border-color: var(--yellow);
+  background-color: var(--yellow);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-family: "Montserrat Bold";
+}
+
+textarea::placeholder,
+input::placeholder {
+  font-family: "Montserrat Bold";
+  font-size: 0.875rem;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+textarea {
+  height: 218px;
+  padding-top: 15px;
+  resize: none;
+}
+.flex-row {
+  font-size: 0;
+  width: 940px;
+  flex-direction: row;
+  z-index: 1;
+}
+.flex-column {
+  font-size: 1rem;
+  border: none;
+  display: inline-flex;
+  width: 470px;
+  flex-direction: column;
+  align-items: center;
+  height: 218px;
+  margin-bottom: 31px;
+}
+
+.form_name:required:focus:invalid,
+.form_email:required:focus:invalid {
+  border: 2px solid red;
+}
+
+.form_name:required:focus:valid,
+.form_email:required:focus:valid {
+  border: 2px solid green;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+}

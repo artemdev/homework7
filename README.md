@@ -1,3 +1,3 @@
 <h1>Homework7</h1>
-<img src="task.jpg">
-<img src="requirements.png">
+<img src="img/task.jpg">
+<img src="img/requirements.png">

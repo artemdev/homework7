@@ -26,21 +26,20 @@ h2 {
 }
 h1 {
   color: var(--black);
-  margin-bottom: 80px;
 }
 h2 {
   color: var(--white);
   margin-top: 112px;
-  margin-bottom: 73px;
 }
-span.heading {
+p.heading {
   display: block;
   font-family: "Droid Serif Italic";
   font-size: 1rem;
   text-transform: none;
   margin-top: 22px;
-
+  text-align: center;
   color: var(--grey);
+  margin-bottom: 80px;
 }
 
 .logo {
@@ -115,17 +114,31 @@ main {
   font-family: "Montserrat Bold";
 }
 
-.services-img-container {
-  border: 5px solid var(--yellow);
+.first-service::before {
+  background-image: url("../img/basket.png");
+}
+
+.second-service::before {
+  background-image: url("../img/laptop.png");
+}
+.third-service::before {
+  background-image: url("../img/locked.png");
+}
+
+.services ul li::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  border: 3px solid var(--yellow);
   border-radius: 50%;
   box-sizing: border-box;
   width: 71px;
   height: 71px;
-  padding: 10px 8px 6px 8px;
   margin: 0 auto 23px auto;
 }
 
-.services p {
+.services ul li p {
   font-family: "Roboto Slab";
   color: var(--grey);
 }
@@ -151,11 +164,6 @@ main {
   right: 0;
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
   z-index: 0;
 }
 
